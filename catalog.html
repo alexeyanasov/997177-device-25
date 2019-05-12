@@ -58,8 +58,19 @@
 			<li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
 		</ul>
 		<section class="filters">
-			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<!-- Здесь будет форма -->
+			<div class="filter-horizontal">
+				<h2 class="visually-hidden">Фильтр товаров</h2>
+				<b>Сортировка:</b>
+				<ul>
+					<li><a class="active" href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По популярности</a></li>
+				</ul>
+			</div>
+			<div class="filter-spindle">
+				<input type="range" min="0" max="100" step="1" value="50">
+				<!-- Здесь будет форма -->
+			</div>
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Моноподы для селфи</h2>
@@ -101,6 +112,17 @@
 					</p>
 				</li>
 			</ul>
+
+			<section class="contols">
+				<button>Назад</button>
+				<ul class="pagination-list">
+					<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+					<li class="pagination-item"><a>2</a></li>
+					<li class="pagination-item"><a href="#">3</a></li>
+					<li class="pagination-item"><a href="#">4</a></li>
+				</ul>
+				<button>Вперед</button>
+			</section>
 		</section>
 	</main>
 
