@@ -57,29 +57,26 @@
 			<div class="slider-wrapper">
 				<img src="slide1.png" alt="Слайд 1">
 				<div class="slider-content-inner">
-					<strong>Делай селфи, как Бен Стиллер!</strong>
+					<h2>Делай селфи, как Бен Стиллер!</h2>
 					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					<div class="wrapper">
 						<a href="#">Подробнее</a>
-						<div class="control-buttons">
-							<ul>
-								<li class="active">1</li>
-								<li>2</li>
-								<li>3</li>
-							</ul>
-						</div>
 					</div>
 					<table border="1">
-						<tr>
-							<th>8,5 м</th>
-							<th>5 кг</th>
-							<th>Карбон</th>
-						</tr>
-						<tr>
-							<td>Длина палки</td>
-							<td>Вес палки</td>
-							<td>Материал</td>
-						</tr>
+						<thead>
+							<tr>
+								<th>8,5 м</th>
+								<th>5 кг</th>
+								<th>Карбон</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Длина палки</td>
+								<td>Вес палки</td>
+								<td>Материал</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</div>
@@ -87,25 +84,22 @@
 			<div class="slider-wrapper">
 				<img src="slide2.png" alt="Слайд 2">
 				<div class="slider-content-inner">
-					<strong>Худеем правильно!</strong>
+					<h2>Худеем правильно!</h2>
 					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 					<div class="wrapper">
 						<a href="#">Подробнее</a>
-						<div class="control-buttons">
-							<ul>
-								<li>1</li>
-								<li class="active">2</li>
-								<li>3</li>
-							</ul>
-						</div>
 					</div>
 					<table border="1">
-						<tr>
-							<th>48 часов</th>
-						</tr>
-						<tr>
-							<td>Без подзарядки</td>
-						</tr>
+						<thead>
+							<tr>
+								<th>48 часов</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Без подзарядки</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</div>
@@ -113,102 +107,119 @@
 			<div class="slider-wrapper">
 				<img src="slide3.png" alt="Слайд 3">
 				<div class="slider-content-inner">
-					<strong>Порхает как бабочка, жалит как пчела!</strong>
+					<h2>Порхает как бабочка, жалит как пчела!</h2>
 					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					<div class="wrapper">
 						<a href="#">Подробнее</a>
-						<div class="control-buttons">
-							<ul>
-								<li>1</li>
-								<li>2</li>
-								<li class="active">3</li>
-							</ul>
-						</div>
 					</div>
 					<table border="1">
-						<tr>
-							<th>800 м</th>
-							<th>50 м</th>
-						</tr>
-						<tr>
-							<td>Дальность полета</td>
-							<td>Радиус поражения</td>
-						</tr>
+						<thead>
+							<tr>
+								<th>800 м</th>
+								<th>50 м</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Дальность полета</td>
+								<td>Радиус поражения</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
+			</div>
+			<div class="control-buttons">
+				<ul>
+					<li>1</li>
+					<li class="active">2</li>
+					<li>3</li>
+				</ul>
 			</div>
 		</section>
 		<!-- // Слайдер -->
 
 		<!-- Популярные товары -->
-		<section class="popular-products">
-			<div class="product-wrapper">
+		<ul class="popular-products">
+			<li class="product-wrapper">
 				<img src="product1.png" alt="Продукт 1">
 				<p>Виртуальная реальность</p>
-			</div>			
-			<div class="product-wrapper">
+			</li>			
+			<li class="product-wrapper">
 				<img src="product2.png" alt="Продукт 2">
 				<p>Моноподы для селфи</p>
-			</div>			
-			<div class="product-wrapper">
+			</li>			
+			<li class="product-wrapper">
 				<img src="product3.png" alt="Продукт 3">
 				<p>Экшн-камеры</p>
-			</div>			
-			<div class="product-wrapper">
+			</li>			
+			<li class="product-wrapper">
 				<img src="product4.png" alt="Продукт 4">
 				<p>Фитнес-браслеты</p>
-			</div>			
-			<div class="product-wrapper">
+			</li>			
+			<li class="product-wrapper">
 				<img src="product5.png" alt="Продукт 5">
 				<p>Умные часы</p>
-			</div>			
-			<div class="product-wrapper">
+			</li>			
+			<li class="product-wrapper">
 				<img src="product6.png" alt="Продукт 6">
 				<p>Квадрокоптеры</p>
-			</div>
-		</section>
+			</li>
+		</ul>
 		<!-- // Популярные товары -->
 
 		<!-- Преимущества -->
 		<section class="services">
-			<a href="#tab1" class="services-items active">Доставка</a>
-			<a href="#tab2" class="services-items">Гарантия</a>
-			<a href="#tab3" class="services-items">Кредит</a>
-			<div class="services-content">
-				<div id="tab1" class="services-content-wrapper">
+			<div class="control-buttons">
+				<ul>
+					<li>
+						<label class="services-items active">
+							<input type="radio">Доставка
+						</label>
+					</li>
+					<li>
+						<label class="services-items">
+							<input type="radio">Гарантия
+						</label>
+					</li>
+					<li>
+						<label class="services-items">
+							<input type="radio">Кредит
+						</label>
+					</li>
+				</ul>
+			</div>
+			<ul class="services-content">
+				<li class="services-content-wrapper">
 					<h2>Доставка</h2>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-					<img src="delivery.png" alt="Delivery">
-				</div>
-				<div id="tab2" class="services-content-wrapper">
+				</li>
+				<li class="services-content-wrapper">
 					<h2>Гарантия</h2>
 					<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-					<img src="warranty.png" alt="Warranty">
-				</div>
-				<div id="tab3" class="services-content-wrapper">
+				</li>
+				<li class="services-content-wrapper">
 					<h2>Кредит</h2>
 					<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-					<img src="credit.png" alt="Credit">
-				</div>
-			</div>
+				</li>
+			</ul>
 		</section>	
 		<!-- // Преимущества -->
 
 		<!-- Производители -->
-		<section class="manufacturers">
-			<div class="manufacturer-wrapper">
+		<ul class="manufacturers">
+			<li class="manufacturer-wrapper">
 				<img src="manufactur1.png" alt="Производитель 1">
-			</div>
-			<div class="manufacturer-wrapper">
+			</li>
+			<li class="manufacturer-wrapper">
 				<img src="manufactur2.png" alt="Производитель 2">
-			</div>
-			<div class="manufacturer-wrapper">
+			</li>
+			<li class="manufacturer-wrapper">
 				<img src="manufactur3.png" alt="Производитель 3">
-			</div>
-			<div class="manufacturer-wrapper">
+			</li>
+			<li class="manufacturer-wrapper">
 				<img src="manufactur4.png" alt="Производитель 4">
-			</div>
-		</section>
+			</li>
+		</ul>
 		<!-- // Производители -->
 
 		<!-- О нас -->

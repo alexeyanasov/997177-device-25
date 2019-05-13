@@ -57,25 +57,25 @@
 			<li><a href="catalog.html">Каталог товаров</a></li>
 			<li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
 		</ul>
-		<section class="filters">
-			<div class="filter-horizontal">
-				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<b>Сортировка:</b>
+		<section class="catalog">
+			<div class="header-filter">
+				<h2>Сортировка:</h2>
 				<ul>
 					<li><a class="active" href="#">По цене</a></li>
 					<li><a href="#">По типу</a></li>
 					<li><a href="#">По популярности</a></li>
 				</ul>
 			</div>
-			<div class="filter-spindle">
+			<div class="filter">
+				<h2>Фильтр</h2>
 				<input type="range" min="0" max="100" step="1" value="50">
 				<!-- Здесь будет форма -->
 			</div>
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Моноподы для селфи</h2>
-			<ul class="catalog-list">
-				<li class="catalog-item">
+			<div class="catalog-list">
+				<div class="catalog-item">
 					<a href="#">
 						<img src="img/product-1.jpg" width="220" height="165" alt="Любительская селфи-палка">
 					</a>
@@ -83,8 +83,8 @@
 						<a href="#" class="button">Любительская селфи-палка</a>
 						<span class="catalog-item-price">500 руб.</span>
 					</p>
-				</li>
-				<li class="catalog-item">
+				</div>
+				<div class="catalog-item">
 					<a href="#">
 						<img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
 					</a>
@@ -92,8 +92,8 @@
 						<a href="#" class="button">Профессиональная селфи-палка</a>
 						<span class="catalog-item-price">1500 руб.</span>
 					</p>
-				</li>				
-				<li class="catalog-item">
+				</div>				
+				<div class="catalog-item">
 					<a href="#">
 						<img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
 					</a>
@@ -101,8 +101,8 @@
 						<a href="#" class="button">Непотопляемая селфи-палка</a>
 						<span class="catalog-item-price">2500 руб.</span>
 					</p>
-				</li>
-				<li class="catalog-item">
+				</div>
+				<div class="catalog-item">
 					<a href="#">
 						<img src="img/product-4.jpg" width="220" height="165" alt="Селфи-палка следуй за мной">
 					</a>
@@ -110,8 +110,8 @@
 						<a href="#" class="button">Селфи-палка следуй за мной</a>
 						<span class="catalog-item-price">4900 руб.</span>
 					</p>
-				</li>
-			</ul>
+				</div>
+			</div>
 
 			<section class="contols">
 				<button>Назад</button>
