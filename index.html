@@ -16,7 +16,7 @@
 				<input type="submit" value="Поиск">
 			</form>
 			<ul class="user-navigation">
-				<li><a class="user-navigation-link" href="#">Вход</a></li>
+				<li><a class="user-navigation-link" href="login.html">Вход</a></li>
 			</ul>
 			<a href="#">Сравнить</a>
 			<a href="#">Корзина</a>
@@ -130,9 +130,9 @@
 			</div>
 			<div class="control-buttons">
 				<ul>
-					<li>1</li>
-					<li class="active">2</li>
-					<li>3</li>
+					<li><button type="button">1</button></li>
+					<li class="active"><button type="button">2</button></li>
+					<li><button type="button">3</button></li>
 				</ul>
 			</div>
 		</section>
@@ -247,7 +247,7 @@
 				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 			</p>
 			<p>
-				<a href="#"><img src="img/map.jpg" alt="Как проехать" width="560" height="222"></a>
+				<a href="map.html"><img src="img/map.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва" width="560" height="222"></a>
 			</p>
 			<a class="button" href="contacts.html">Напишите нам</a>
 		</section>
@@ -278,14 +278,42 @@
 		</p>
 		<div class="footer-social">
 			<ul>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
-				<li><a class="social-button" href="#">Твиттер</a></li>
+				<li><a class="social-button" href="#" aria-label="Facebook">Фейсбук</a></li>
+				<li><a class="social-button" href="#" aria-label="Instagram">Инстаграм</a></li>
+				<li><a class="social-button" href="#" aria-label="Twitter">Твиттер</a></li>
 			</ul>
 		</div>
 		<p class="footer-copyright">
 			<a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="50" height="50"></a>
 		</p>
 	</footer>
+
+
+	<section class="writeus">
+		<button class="modal-close" type="button">
+			Закрыть
+        </button>
+		<form class="writeus-wrapper" action="https://echo.htmlacademy.ru" method="post">
+			<p class="writeus-item">
+				<label for="appointment-name">Ваше имя:</label>
+				<input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+			</p>
+			<p class="appointment-item">
+				<label for="appointment-email">Ваш e-mail:</label>
+				<input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+			</p>
+			<p class="appointment-item">
+				<label for="appointment-text">Текст письма:</label>
+				<textarea name="text" id="appointment-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+	</section>
+	<section class="popap-map">
+		<button class="modal-close" type="button">
+			Закрыть
+        </button>
+		<img src="img/map.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва">
+	</section>
 </body>
 </html>
