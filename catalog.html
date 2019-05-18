@@ -64,6 +64,8 @@
 					<form action="https://echo.htmlacademy.ru" method="post">
 						<div class="catalog-filter-range">
 							<input type="range" min="0" max="100" step="1" value="50">
+							<!-- Заглушка для второго ползунка в виде span -->
+							<span>|</span>
         				</div>
         				<fieldset class="catalog-filter-color">
 							<legend>Цвет</legend>
@@ -94,11 +96,11 @@
 							<legend>Bluetooth</legend>
 							<ul>
 								<li class="filter-option">
-									<input type="radio" name="bluetooth-group" value="thereis" id="filter-thereis" checked>
+									<input type="radio" name="bluetooth" id="filter-thereis" checked>
 									<label for="filter-thereis">Есть</label>
 								</li>
 								<li class="filter-option">
-									<input type="radio" name="bluetooth-group" value="not" id="filter-not">
+									<input type="radio" name="bluetooth" id="filter-not">
 									<label for="filter-not">Нет</label>
 								</li>
 							</ul>
@@ -109,10 +111,14 @@
 				<div class="catalog-wrapper">
 					<div class="catalog-sorting">
 						<h2>Сортировка:</h2>
-						<ul>
-							<li><a class="active" href="#">По цене</a></li>
-							<li><a href="#">По типу</a></li>
-							<li><a href="#">По популярности</a></li>
+						<ul class="sort-list">
+							<li><a class="sort-list-item active" href="#">По цене</a></li>
+							<li><a class="sort-list-item" href="#">По типу</a></li>
+							<li><a class="sort-list-item" href="#">По популярности</a></li>
+							
+							<!-- Это стрелочки -->
+							<li><a class="sort-list-item"href="#" aria-label="Выше"></a></li>
+							<li><a class="sort-list-item" href="#" aria-label="Ниже"></a></li>
 						</ul>
 					</div>
 					<div class="catalog-list">
