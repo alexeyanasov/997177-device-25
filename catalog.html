@@ -62,11 +62,12 @@
 				<section class="catalog-filter">
 					<h2>Фильтр</h2>
 					<form action="https://echo.htmlacademy.ru" method="post">
-						<div class="catalog-filter-range">
-							<input type="range" min="0" max="100" step="1" value="50">
-							<!-- Заглушка для второго ползунка в виде span -->
-							<span>|</span>
-        				</div>
+						<fieldset class="catalog-filter-range">
+							<legend>Стоимость</legend>
+								<input type="range" min="0" max="100" step="1" value="50">
+								<!-- Заглушка для второго ползунка в виде span -->
+								<button>|</button>
+	        			</fieldset>
         				<fieldset class="catalog-filter-color">
 							<legend>Цвет</legend>
 							<ul>
@@ -115,18 +116,21 @@
 							<li><a class="sort-list-item active" href="#">По цене</a></li>
 							<li><a class="sort-list-item" href="#">По типу</a></li>
 							<li><a class="sort-list-item" href="#">По популярности</a></li>
-							
-							<!-- Это стрелочки -->
-							<li><a class="sort-list-item"href="#" aria-label="Выше"></a></li>
-							<li><a class="sort-list-item" href="#" aria-label="Ниже"></a></li>
 						</ul>
+						<!-- Это стрелочки -->
+						<p>
+							<a class="sort-list-up"href="#" aria-label="Выше"></a>
+							<a class="sort-list-down" href="#" aria-label="Ниже"></a>
+						</p>
 					</div>
 					<div class="catalog-list">
 						<h2 class="visually-hidden">Моноподы для селфи</h2>
 						<div class="catalog-item">
-							<a href="#">
-								<img src="img/product/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-							</a>
+							<div class="curtain">
+								<button type="button">В корзину</button>
+								<button type="button">Добавить к сравнению</button>
+							</div>
+							<img src="img/product/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
 							<p class="catalog-item-price-wrap">
 								<a href="#" class="button">Любительская селфи-палка</a>
 								<span class="catalog-item-price">500 руб.</span>
