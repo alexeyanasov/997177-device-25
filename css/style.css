@@ -17,27 +17,28 @@ body
 a
 {
     text-decoration: none;
-    text-transform: uppercase;
 }
 .main-header{
-	/*background-color: #f0c52e;*/
-	background-color: #f7e296;
+	background-color: #f0c52e;
+	/*background-color: #f7e296;*/
 }
 .user-navigation, 
 .navigation-list,
-.site-navigation,
-.site-navigation-inner,
+.site-navigation-item,
+.site-navigation-inner-list,
 .site-navigation-section,
 .services-content,
 .manufacturers{
 	list-style: none;
 }
-.user-navigation a,
+.user-navigation a,.navigation-link{
+	color: #000;
+}
 .site-navigation-section a,
 .navigation-list a,
-.navigation-link,
-.site-navigation-link a{
-	color: #000000;
+.site-navigation-item a{
+	color: #000;
+	text-transform: uppercase;
 }
 .user-navigation a:hover,
 .user-navigation a:focus,
@@ -47,8 +48,8 @@ a
 .navigation-list a:focus,
 .navigation-link:hover,
 .navigation-link:focus,
-.site-navigation-link a:hover,
-.site-navigation-link a:focus
+.site-navigation-item a:hover,
+.site-navigation-item a:focus
 {
 	color:  rgba(0, 0, 0, 0.6);
 }
@@ -56,34 +57,41 @@ a
 .site-navigation-section a:active,
 .navigation-list a:active,
 .navigation-link:active,
-.site-navigation-link a:active{
+.site-navigation-item a:active{
 	color: rgba(0, 0, 0, 0.3);
 }
 .navigation-list{
-	font-family: Gilroy, Arial, sans-serif;
+	font-family: Gilroy, Geneva, sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	letter-spacing: 3.6px;
+	line-height: 1.33;
+	text-align: left;
 }
 .site-navigation-section a{
 	text-transform: none;
 }
 .navigation a{
-	text-transform: none;
+	/*text-transform: none;*/
 }
 .contacts h2,
 .about h2{
-	font-family: Gilroy, Arial, sans-serif;
+	font-family: Gilroy, Geneva, sans-serif;
 	font-size: 47px;
 	font-weight: 800;
+	line-height: 1.02;
+	letter-spacing: 0.5px;
+	text-align: left;
 }
 .button{
-	font-family: Gilroy;
+	font-family: Gilroy, Geneva, sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	text-transform: uppercase;
 	position: relative;
 	color: #000;
+	line-height: 1.33;
+	letter-spacing: 3.6px;
 }
 .button::before{
 	content: "";
@@ -111,6 +119,7 @@ a
 .main-footer p,
 .main-footer a{
 	color: #ffffff;
+	/*text-transform: uppercase;*/
 }
 .main-footer a:hover,
 .main-footer a:focus{
@@ -125,7 +134,6 @@ a
 	
 }
 .manufacturers img{
-	background-blend-mode: color;
 	opacity: 0.2;
 }
 .manufacturers img:hover{
@@ -135,7 +143,7 @@ a
 /* CATALOG */
 .container	h1{
 	color: #000;
-	font-family: Gilroy;
+	font-family: Gilroy, Geneva, sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 }
@@ -146,7 +154,7 @@ a
 	color: rgba(0, 0, 0, 0.3);
 }
 .breadcrumbs a{
-	text-transform: none;
+	/*text-transform: none;*/
 	color: rgba(0, 0, 0, 0.3);
 }
 .breadcrumbs a:hover,
@@ -164,7 +172,7 @@ a
 
 .catalog-sorting h2{
 	color: #000;
-	font-family: Gilroy;
+	font-family: Gilroy, Geneva, sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	letter-spacing: 3.2px;
@@ -190,14 +198,14 @@ a
 }
 .catalog-item-price-wrap a{
 	color: #000;
-	font-family: Gilroy;
+	font-family: Gilroy, Geneva, sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	text-transform: none;
 }
 .catalog-item-price{
 	color: #464646;
-	font-family: Gilroy;
+	font-family: Gilroy, Geneva, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 }
