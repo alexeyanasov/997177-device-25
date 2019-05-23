@@ -142,9 +142,23 @@ a{
 
 .manufacturers img{
     opacity: 0.2;
+
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+            filter: gray; /* IE 6-9 */
 }
 .manufacturers img:hover{
     opacity: 1;
+
+    -webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+         -o-filter: grayscale(0%);
+            filter: grayscale(0%);
+            filter: gray; /* IE 6-9 */
 }
 
 /* CATALOG */
