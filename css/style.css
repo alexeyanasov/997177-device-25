@@ -1,5 +1,4 @@
-body
-{
+body{
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -14,31 +13,32 @@ body
     background-color: #fff;
 }
 
-a
-{
+a{
     text-decoration: none;
 }
 .main-header{
-	background-color: #f0c52e;
-	/*background-color: #f7e296;*/
+    background-color: #f0c52e;
+    /*background-color: #f7e296;*/
 }
-.user-navigation, 
+.user-navigation,
 .navigation-list,
 .site-navigation-item,
 .site-navigation-inner-list,
 .site-navigation-section,
 .services-content,
 .manufacturers{
-	list-style: none;
+    list-style: none;
 }
-.user-navigation a,.navigation-link{
-	color: #000;
+.user-navigation a,
+.navigation-link{
+    color: #000;
 }
 .site-navigation-section a,
 .navigation-list a,
 .site-navigation-item a{
-	color: #000;
-	text-transform: uppercase;
+    text-transform: uppercase;
+
+    color: #000;
 }
 .user-navigation a:hover,
 .user-navigation a:focus,
@@ -49,163 +49,181 @@ a
 .navigation-link:hover,
 .navigation-link:focus,
 .site-navigation-item a:hover,
-.site-navigation-item a:focus
-{
-	color:  rgba(0, 0, 0, 0.6);
+.site-navigation-item a:focus{
+    color: rgba(0, 0, 0, 0.6);
 }
 .user-navigation a:active,
 .site-navigation-section a:active,
 .navigation-list a:active,
 .navigation-link:active,
 .site-navigation-item a:active{
-	color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 .navigation-list{
-	font-family: Gilroy, Geneva, sans-serif;
-	font-size: 18px;
-	font-weight: 800;
-	letter-spacing: 3.6px;
-	line-height: 1.33;
-	text-align: left;
+    font-family: Gilroy, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+
+    text-align: left;
+    letter-spacing: 3.6px;
 }
 .site-navigation-section a{
-	text-transform: none;
+    text-transform: none;
 }
 .navigation a{
-	/*text-transform: none;*/
+    /*text-transform: none;*/
 }
 .contacts h2,
 .about h2{
-	font-family: Gilroy, Geneva, sans-serif;
-	font-size: 47px;
-	font-weight: 800;
-	line-height: 1.02;
-	letter-spacing: 0.5px;
-	text-align: left;
+    font-family: Gilroy, Tahoma, sans-serif;
+    font-size: 47px;
+    font-weight: 800;
+    line-height: 1.02;
+
+    text-align: left;
+    letter-spacing: 0.5px;
 }
 .button{
-	font-family: Gilroy, Geneva, sans-serif;
-	font-size: 18px;
-	font-weight: 800;
-	text-transform: uppercase;
-	position: relative;
-	color: #000;
-	line-height: 1.33;
-	letter-spacing: 3.6px;
+    font-family: Gilroy, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+
+    position: relative;
+
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+
+    color: #000;
 }
 .button::before{
-	content: "";
-	position: absolute;
-	top: 7px;
-	width: 260px;
-	height: 8px;
-	background-color: #f0c52e;
-	z-index: -1;
+    position: absolute;
+    z-index: -1;
+    top: 7px;
+
+    width: 260px;
+    height: 8px;
+
+    content: '';
+
+    background-color: #f0c52e;
 }
 .button:hover::before{
-	height: 40px;
-	top: -10px;
+    top: -10px;
+
+    height: 40px;
 }
 .button:active{
-	color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 .button:active::before{
-	height: 40px;
-	top: -10px;
+    top: -10px;
+
+    height: 40px;
 }
 .main-footer{
-	background-color: #464646;
+    background-color: #464646;
 }
 .main-footer p,
 .main-footer a{
-	color: #ffffff;
-	/*text-transform: uppercase;*/
+    color: #fff;
+    /*text-transform: uppercase;*/
 }
 .main-footer a:hover,
 .main-footer a:focus{
-	color:  rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 .main-footer a:active{
-	color:  rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 
-.services-content{
-	
-}
+
 .manufacturers img{
-	opacity: 0.2;
+    opacity: 0.2;
 }
 .manufacturers img:hover{
-	opacity: 1;
+    opacity: 1;
 }
 
 /* CATALOG */
 .container	h1{
-	color: #000;
-	font-family: Gilroy, Geneva, sans-serif;
-	font-size: 47px;
-	font-weight: 800;
+    font-family: Gilroy, Tahoma, sans-serif;
+    font-size: 47px;
+    font-weight: 800;
+
+    color: #000;
 }
 .breadcrumbs{
-	list-style: none;
-	font-size: 14px;
-	font-weight: 300;
-	color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    font-weight: 300;
+
+    list-style: none;
+
+    color: rgba(0, 0, 0, 0.3);
 }
 .breadcrumbs a{
-	/*text-transform: none;*/
-	color: rgba(0, 0, 0, 0.3);
+    /*text-transform: none;*/
+    color: rgba(0, 0, 0, 0.3);
 }
 .breadcrumbs a:hover,
 .breadcrumbs a:focus{
-	color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 .breadcrumbs a:active{
-	color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.1);
 }
 .breadcrumbs-current a,
 .breadcrumbs-current a:hover,
 .breadcrumbs-current a:active{
-	color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-sorting h2{
-	color: #000;
-	font-family: Gilroy, Geneva, sans-serif;
-	font-size: 16px;
-	font-weight: 800;
-	letter-spacing: 3.2px;
+    font-family: Gilroy, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+
+    letter-spacing: 3.2px;
+
+    color: #000;
 }
 .sort-list{
-	color: #000;
-	list-style: none;
+    list-style: none;
+
+    color: #000;
 }
 .sort-list-item{
-	font-size: 14px;
-	text-transform: none;
-	color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+
+    text-transform: none;
+
+    color: rgba(0, 0, 0, 0.3);
 }
 .sort-list-item:hover,
 .sort-list-item:focus{
-	color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 .sort-list-item:active{
-	color: #000;
+    color: #000;
 }
 .active{
-	color: #000;
+    color: #000;
 }
 .catalog-item-price-wrap a{
-	color: #000;
-	font-family: Gilroy, Geneva, sans-serif;
-	font-size: 18px;
-	font-weight: 800;
-	text-transform: none;
+    font-family: Gilroy, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+
+    text-transform: none;
+
+    color: #000;
 }
 .catalog-item-price{
-	color: #464646;
-	font-family: Gilroy, Geneva, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
+    font-family: Gilroy, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+    color: #464646;
 }
