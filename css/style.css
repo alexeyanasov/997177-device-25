@@ -243,15 +243,15 @@ a{
 }
 
 /*СЕТКУ РИСУЮ*/
-.wrapper{
-	width: 1160px;
+.wrapper-content{
 	width: 1160px;
 	padding: 0 20px;
 	margin: 0 auto;
 }
 .main-navigation{
-	height: 186px;
-	background-color: #f0c52e;
+	min-height: 186px;
+	/*background-color: #f0c52e;*/
+	background-color: #f7e296;
 	padding-top: 50px;
 }
 .main-navigation-wrapper{
@@ -284,10 +284,10 @@ a{
 .navigation-list li{
 	margin-left: 30px;
 }
-.navigation-list li:nth-child(1){
+.navigation-list li:first-child{
 	margin-left: 0;
 }
-.navigation-list li:nth-child(3){
+.navigation-list li:last-child{
 	margin-left: 105px;
 }
 .popular-products{
@@ -297,10 +297,10 @@ a{
 	margin-left: 40px;
 	list-style: none;
 }
-.popular-products li:nth-child(1){
+.popular-products li:first-child{
 	margin-left: 0;
 }
-.popular-products li:nth-last-child(1){
+.popular-products li:last-child{
 	margin-left: 0;
 }
 
@@ -312,10 +312,10 @@ a{
 	list-style: none;
 	margin-left: 80px;
 }
-.manufacturers li:nth-child(1){
+.manufacturers li:last-child{
 	margin-left: 0;
 }
-.manufacturers li:nth-last-child(1){
+.manufacturers li:first-child{
 	margin-left: 0;
 }
 
@@ -328,7 +328,7 @@ a{
 	justify-content: space-between;
 }
 .footer-social{
-	margin-left: 500px;
+	margin: 0 auto;
 }
 .footer-social ul{
 	display: flex;
@@ -380,4 +380,18 @@ a{
 }
 .visually-hidden{
 	display: none; 
+}
+.catalog-wrapper{
+	margin-left: 75px;
+	display: flex;
+}
+.catalog {
+	display: flex;
+}
+.contols{
+	display: flex;
+}
+.pagination-list{
+	list-style: none;
+	display: flex;
 }
