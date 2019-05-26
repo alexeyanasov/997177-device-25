@@ -17,7 +17,7 @@ a{
     text-decoration: none;
 }
 .main-header{
-    background-color: #f0c52e;
+    /*background-color: #f0c52e;*/
     /*background-color: #f7e296;*/
 }
 .user-navigation,
@@ -240,4 +240,144 @@ a{
     font-weight: 300;
 
     color: #464646;
+}
+
+/*СЕТКУ РИСУЮ*/
+.wrapper{
+	width: 1160px;
+	width: 1160px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.main-navigation{
+	height: 186px;
+	background-color: #f0c52e;
+	padding-top: 50px;
+}
+.main-navigation-wrapper{
+	display: flex;
+	padding-left: 60px;
+	padding-right: 60px;
+	justify-content: space-between;
+}
+.navigation{
+	display: flex;
+	/*justify-content: space-between;*/
+	min-width: 500px;
+}
+.user-navigation,
+.site-navigation-list,
+.navigation-list,
+.popular-products{ 
+	padding: 0; /* Сброс в списке отступов согласно Д-25 */
+	margin: 0;
+}
+/*Временная заглушка выпадающего списка*/
+.site-navigation-section{
+	display: none;
+}
+.navigation-list{
+	padding-top: 40px;
+	min-width: 500px;
+	display: flex;
+}
+.navigation-list li{
+	margin-left: 30px;
+}
+.navigation-list li:nth-child(1){
+	margin-left: 0;
+}
+.navigation-list li:nth-child(3){
+	margin-left: 105px;
+}
+.popular-products{
+	display: flex;
+}
+.popular-products li{
+	margin-left: 40px;
+	list-style: none;
+}
+.popular-products li:nth-child(1){
+	margin-left: 0;
+}
+.popular-products li:nth-last-child(1){
+	margin-left: 0;
+}
+
+.manufacturers{
+	display: flex;
+	justify-content: center;
+}
+.manufacturers li{
+	list-style: none;
+	margin-left: 80px;
+}
+.manufacturers li:nth-child(1){
+	margin-left: 0;
+}
+.manufacturers li:nth-last-child(1){
+	margin-left: 0;
+}
+
+.index-columns{
+	display: flex;
+	justify-content: space-between;
+}
+.index-row{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-social{
+	margin-left: 500px;
+}
+.footer-social ul{
+	display: flex;
+}
+.navigation-list--footer{
+	min-width: 0px;
+	padding: 0;
+	margin: 0;
+		display: flex;
+	justify-content: space-between;
+}
+.navigation-list--footer li{
+	margin-left: 0;
+	
+}
+.navigation-list--footer li:nth-child(3){
+	margin-left: 0;
+}
+.wrapper-footer-navigation-list{
+	width: 440px;
+}
+
+/*Catalog setka*/
+.page-title{
+	margin: 0;
+	padding: 0;
+	min-height: 47px;
+	margin-top: 39px;
+	margin-bottom: 35px;
+	margin-left: 60px;
+}
+.breadcrumbs{
+	margin: 0;
+	padding: 0;
+	min-height: 24px;
+	margin-left: 60px;
+	margin-bottom: 50px;
+	display: flex;
+}
+.catalog-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.catalog-item{
+	min-height: 470px;
+	width: 360px;
+	margin-bottom: 45px;
+	margin-right: 40px;
+}
+.visually-hidden{
+	display: none; 
 }
