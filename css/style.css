@@ -395,3 +395,12 @@ a{
 	list-style: none;
 	display: flex;
 }
+
+.filter-title{
+	width: 268px;
+	margin-right: ;
+}
+.catalog-filter form{
+	width: 268px;
+	padding-right: 68px;
+}
