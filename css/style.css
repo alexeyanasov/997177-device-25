@@ -382,7 +382,7 @@ a{
 	display: none; 
 }
 .catalog-wrapper{
-	margin-left: 75px;
+	padding-left: 75px;
 	display: flex;
 }
 .catalog {
