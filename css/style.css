@@ -18,11 +18,8 @@ a{
 }
 /*ЛОГОТИП*/
 .header-logo{
-	position: absolute;
-	z-index: 1;
-	top: 32px;
 	padding-left: 60px;
-	cursor: pointer;
+	display: inline-block;
 }
 .header-logo img{
 	height: 35px;
