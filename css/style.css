@@ -1,25 +1,41 @@
 body{
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 30px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 30px;
 
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    color: #464646;
-    background-color: #fff;
+	color: #464646;
+	background-color: #fff;
 }
 
 a{
-    text-decoration: none;
+	text-decoration: none;
 }
-.main-header{
-    /*background-color: #f0c52e;*/
-    /*background-color: #f7e296;*/
+/*ЛОГОТИП*/
+.header-logo{
+	position: absolute;
+	z-index: 1;
+	top: 32px;
+	padding-left: 60px;
+	cursor: pointer;
 }
+.header-logo img{
+	height: 35px;
+	width: 165px;
+}
+.header-logo:hover,
+.header-logo:focus{
+	opacity: 0.6;
+}
+.header-logo:active{
+	opacity: 0.3;
+}
+/*НАВИГАЦИЯ (ПОИСК, КОРЗИНА, ВХОД, СРАВНИТЬ)*/
 .user-navigation,
 .navigation-list,
 .site-navigation-item,
@@ -27,18 +43,18 @@ a{
 .site-navigation-section,
 .services-content,
 .manufacturers{
-    list-style: none;
+	list-style: none;
 }
 .user-navigation a,
 .navigation-link{
-    color: #000;
+	color: #000;
 }
 .site-navigation-section a,
 .navigation-list a,
 .site-navigation-item a{
-    text-transform: uppercase;
+	text-transform: uppercase;
 
-    color: #000;
+	color: #000;
 }
 .user-navigation a:hover,
 .user-navigation a:focus,
@@ -50,196 +66,196 @@ a{
 .navigation-link:focus,
 .site-navigation-item a:hover,
 .site-navigation-item a:focus{
-    color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 .user-navigation a:active,
 .site-navigation-section a:active,
 .navigation-list a:active,
 .navigation-link:active,
 .site-navigation-item a:active{
-    color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 .navigation-list{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
+	font-family: Gilroy, Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.33;
 
-    text-align: left;
-    letter-spacing: 3.6px;
+	text-align: left;
+	letter-spacing: 3.6px;
 }
 .site-navigation-section a{
-    text-transform: none;
+	text-transform: none;
 }
 .navigation a{
-    /*text-transform: none;*/
+	/*text-transform: none;*/
 }
 .contacts h2,
 .about h2{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
-    font-size: 47px;
-    font-weight: 800;
-    line-height: 1.02;
+	font-family: Gilroy, Tahoma, Geneva, sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 1.02;
 
-    text-align: left;
-    letter-spacing: 0.5px;
+	text-align: left;
+	letter-spacing: 0.5px;
 }
 .button{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
+	font-family: Gilroy, Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.33;
 
-    position: relative;
+	position: relative;
 
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
 
-    color: #000;
+	color: #000;
 }
 .button::before{
-    position: absolute;
-    z-index: -1;
-    top: 7px;
+	position: absolute;
+	z-index: -1;
+	top: 7px;
 
-    width: 260px;
-    height: 8px;
+	width: 260px;
+	height: 8px;
 
-    content: '';
+	content: '';
 
-    background-color: #f0c52e;
+	background-color: #f0c52e;
 }
 .button:hover::before{
-    top: -10px;
+	top: -10px;
 
-    height: 40px;
+	height: 40px;
 }
 .button:active{
-    color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 .button:active::before{
-    top: -10px;
+	top: -10px;
 
-    height: 40px;
+	height: 40px;
 }
 .main-footer{
-    background-color: #464646;
+	background-color: #464646;
 }
 .main-footer p,
 .main-footer a{
-    color: #fff;
-    /*text-transform: uppercase;*/
+	color: #fff;
+	/*text-transform: uppercase;*/
 }
 .main-footer a:hover,
 .main-footer a:focus{
-    color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
 }
 .main-footer a:active{
-    color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 }
 
 
 
 .manufacturers img{
-    opacity: 0.2;
+	opacity: 0.2;
 
-    -webkit-filter: grayscale(100%);
-       -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-         -o-filter: grayscale(100%);
-            filter: grayscale(100%);
-            filter: gray; /* IE 6-9 */
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; /* IE 6-9 */
 }
 .manufacturers img:hover{
-    opacity: 1;
+	opacity: 1;
 
-    -webkit-filter: grayscale(0%);
-       -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-         -o-filter: grayscale(0%);
-            filter: grayscale(0%);
-            filter: gray; /* IE 6-9 */
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: gray; /* IE 6-9 */
 }
 
 /* CATALOG */
 .container	h1{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
-    font-size: 47px;
-    font-weight: 800;
+	font-family: Gilroy, Tahoma, Geneva, sans-serif;
+	font-size: 47px;
+	font-weight: 800;
 
-    color: #000;
+	color: #000;
 }
 .breadcrumbs{
-    font-size: 14px;
-    font-weight: 300;
+	font-size: 14px;
+	font-weight: 300;
 
-    list-style: none;
+	list-style: none;
 
-    color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 .breadcrumbs a{
-    /*text-transform: none;*/
-    color: rgba(0, 0, 0, 0.3);
+	/*text-transform: none;*/
+	color: rgba(0, 0, 0, 0.3);
 }
 .breadcrumbs a:hover,
 .breadcrumbs a:focus{
-    color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 .breadcrumbs a:active{
-    color: rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.1);
 }
 .breadcrumbs-current a,
 .breadcrumbs-current a:hover,
 .breadcrumbs-current a:active{
-    color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-sorting h2{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
-    font-size: 16px;
-    font-weight: 800;
+	font-family: Gilroy, Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
 
-    letter-spacing: 3.2px;
+	letter-spacing: 3.2px;
 
-    color: #000;
+	color: #000;
 }
 .sort-list{
-    list-style: none;
+	list-style: none;
 
-    color: #000;
+	color: #000;
 }
 .sort-list-item{
-    font-size: 14px;
+	font-size: 14px;
 
-    text-transform: none;
+	text-transform: none;
 
-    color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 .sort-list-item:hover,
 .sort-list-item:focus{
-    color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 .sort-list-item:active{
-    color: #000;
+	color: #000;
 }
 .active{
-    color: #000;
+	color: #000;
 }
 .catalog-item-price-wrap a{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
-    font-size: 18px;
-    font-weight: 800;
+	font-family: Gilroy, Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: 800;
 
-    text-transform: none;
+	text-transform: none;
 
-    color: #000;
+	color: #000;
 }
 .catalog-item-price{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+	font-family: Gilroy, Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
 
-    color: #464646;
+	color: #464646;
 }
 
 /*СЕТКУ РИСУЮ*/
@@ -249,9 +265,11 @@ a{
 	margin: 0 auto;
 }
 .main-navigation{
+	position: relative;
 	min-height: 186px;
 	/*background-color: #f0c52e;*/
 	background-color: #f7e296;
+	margin-top: 50px;
 	padding-top: 50px;
 }
 .main-navigation-wrapper{
@@ -260,9 +278,12 @@ a{
 	padding-right: 60px;
 	justify-content: space-between;
 }
+.main-navigation-wrapper:last-child{
+	padding-top: 50px;
+}
 .navigation{
 	display: flex;
-	/*justify-content: space-between;*/
+	justify-content: space-between;
 	min-width: 500px;
 }
 .user-navigation,
@@ -272,12 +293,81 @@ a{
 	padding: 0; /* Сброс в списке отступов согласно Д-25 */
 	margin: 0;
 }
+.site-navigation-list{
+	padding-right: 20px;
+	position: relative;
+}
+.site-navigation-list::after{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 223px; /* Здесь сложности с афтером */
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/navigation/plus.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.wrapper-link .navigation-link{
+	padding-left: 25px;
+}
+.user-navigation{
+	padding-left: 25px;
+	position: relative;
+}
+.user-navigation-link::before{
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 5px;
+	width: 14px;
+	height: 12px;
+	background-image: url("../img/icon/user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	/*background-color: #ff0000;*/
+}
+.wrapper-link{
+	min-width: 220px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.navigation-link--compare::before{
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 5px;
+	width: 14px;
+	height: 12px;
+	background-image: url("../img/icon/compare.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.navigation-link--cart::before{
+	content: "";
+	position: absolute;
+	top: 9px;
+	right: 62px;
+	width: 14px;
+	height: 12px;
+	background-image: url("../img/icon/cart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.user-navigation-link:hover::before,
+.user-navigation-linkk:focus::before {
+	opacity: 0.6;
+}
+.user-navigation-link:active::before{
+	opacity: 0.3;
+}
 /*Временная заглушка выпадающего списка*/
 .site-navigation-section{
 	display: none;
 }
 .navigation-list{
-	padding-top: 40px;
+	/*padding-top: 40px;*/
 	min-width: 500px;
 	display: flex;
 }
@@ -337,7 +427,7 @@ a{
 	min-width: 0px;
 	padding: 0;
 	margin: 0;
-		display: flex;
+	display: flex;
 	justify-content: space-between;
 }
 .navigation-list--footer li{
