@@ -36,7 +36,6 @@ a{
 .user-navigation,
 .navigation-list,
 .site-navigation-item,
-.site-navigation-inner-list,
 .site-navigation-section,
 .services-content,
 .manufacturers{
@@ -133,7 +132,7 @@ a{
 	z-index: -1;
 }
 .button::before{
-	top: 7px;
+	top: 0px;
 	height: 8px;
 }
 .button:hover::before{
@@ -391,10 +390,7 @@ a{
 .navigation-link--cart:active::before{
 	opacity: 0.3;
 }
-/*Временная заглушка выпадающего списка*/
-.site-navigation-item .site-navigation-inner-list{
-	margin-top: 30px;
-}
+
 .site-navigation-item .site-navigation-link{
 	color:#000;
 	display: block;
@@ -412,13 +408,17 @@ a{
 	color:#000;
 	text-transform: uppercase;
 }
-.site-navigation-section,
-.site-navigation-inner-list{
+.site-navigation-section{
 	margin: 0;
 	padding: 0;
 	display: none;
 }
 .site-navigation-inner-list{
+	margin: 0;
+	padding: 0;
+	display: none;
+	list-style: none;
+	margin-top: 30px;
 	display: flex;
 	background-color: #f7e296;
 	position: absolute;
@@ -430,8 +430,7 @@ a{
 .site-navigation-inner-list li{
 	width: 240px;
 }
-
-.site-navigation-section:hover{
+.site-navigation-inner-list:hover{
 	opacity: 1;
 }
 .navigation-catalog{
@@ -492,21 +491,21 @@ a{
 	display: flex;
 	justify-content: space-between;
 }
-.index-row{
+.footer-row{
 	display: flex;
 	justify-content: space-between;
 }
-.index-row:nth-child(1){
+.footer-row:nth-child(1){
 	padding-bottom: 35px;
 }
-.index-row > a > svg{
+.footer-row > a > svg{
 	fill: #f0c52e;
 }
-.index-row > a > svg:hover,
-.index-row > a > svg:focus{
+.footer-row > a > svg:hover,
+.footer-row > a > svg:focus{
 	opacity: 0.8;
 }
-.index-row > a > svg:active{
+.footer-row > a > svg:active{
 	opacity: 0.2;
 }
 .footer-copyright svg{
@@ -576,11 +575,6 @@ a{
 	display: flex;
 }
 
-
-.visually-hidden{
-	display: none; 
-}
-
 /*Товары*/
 .product-wrapper a{
 	font-family: Gilroy, Tahoma, Geneva, sans-serif;
@@ -632,7 +626,7 @@ a{
 	padding-top: 90px;
 	padding-bottom: 90px;
 	margin-left: 120px;
-	width: 460px;
+	width: 100%;
 }
 .services-content-wrapper h2{
 	padding: 0;
@@ -641,13 +635,14 @@ a{
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 48px;
-
+	width: 460px;
 	color: #000;
 	padding-bottom: 35px;
 }
 .services-content-wrapper p{
 	font-size: 15px;
 	line-height: 30px;
+	width: 460px;
 }
 
 .footer-contacts{
@@ -705,6 +700,7 @@ a{
 .catalog-wrapper{
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 }
 .catalog-filter{
 	background-color: #ebebeb;
@@ -747,10 +743,10 @@ a{
 	margin-bottom: 45px;
 	position: relative;
 }
-.catalog-item:hover{
+.img-wrapper:hover{
 	opacity: 0.5;
 }
-.catalog-item:hover .curtain{
+.img-wrapper:hover .curtain{
 	z-index: 2;
 }
 .img-wrapper{
