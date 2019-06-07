@@ -92,19 +92,19 @@
 									<div class="wrapper">
 										<a class="btn" href="#">Подробнее</a>
 									</div>
-									<table class="table-specifications" border="1">
+									<table class="table-specifications">
 										<thead>
 											<tr>
-												<th>8,5 м</th>
-												<th>5 кг</th>
-												<th>Карбон</th>
+												<th class="value">8,5 м</th>
+												<th class="value">5 кг</th>
+												<th class="value">Карбон</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>Длина палки</td>
-												<td>Вес палки</td>
-												<td>Материал</td>
+												<td class="parameter">Длина палки</td>
+												<td class="parameter">Вес палки</td>
+												<td class="parameter">Материал</td>
 											</tr>
 										</tbody>
 									</table>
@@ -172,10 +172,11 @@
 		<!-- // Слайдер -->
 
 		<!-- Популярные товары -->
-		<div class="wrapper-content">
+<!-- убрали обертку с img и поплыла верстка (минимизируя обертки)
+	<div class="wrapper-content">
 			<ul class="popular-products">
 				<li class="product-wrapper">
-					<a class="product-wrapper-item"href="#">
+					<a class="product-wrapper-item" href="#">
 						<img src="img/popular-product/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
 						<p>Виртуальная <br>реальность</p>
 					</a>
@@ -207,6 +208,58 @@
 				<li class="product-wrapper">
 					<a class="product-wrapper-item" href="#">
 						<img src="img/popular-product/popular-6.svg" alt="Квадрокоптеры" width="132" height="69">
+						<p>Квадрокоптеры</p>
+					</a>
+				</li>
+			</ul>
+		</div> -->
+		<div class="wrapper-content">
+			<ul class="popular-products">
+				<li class="product-wrapper">
+					<a href="#">
+						<div class="product-wrapper-item">
+							<img src="img/popular-product/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
+						</div>
+						<p>Виртуальная <br>реальность</p>
+					</a>
+				</li>			
+				<li class="product-wrapper">
+					<a href="#">
+						<div class="product-wrapper-item">
+							<img src="img/popular-product/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
+						</div>
+						<p>Моноподы <br>для селфи</p>
+					</a>
+				</li>			
+				<li class="product-wrapper">
+					<a href="#">
+						<div class="product-wrapper-item">
+							<img src="img/popular-product/popular-3.svg" alt="Экшн-камеры" width="71" height="87">
+						</div>
+						<p>Экшн-камеры</p>
+					</a>
+				</li>			
+				<li class="product-wrapper">
+					<a href="#">
+						<div class="product-wrapper-item">
+							<img src="img/popular-product/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65">
+						</div>
+						<p>Фитнес-браслеты</p>
+					</a>
+				</li>			
+				<li class="product-wrapper">
+					<a href="#">
+						<div class="product-wrapper-item">
+							<img src="img/popular-product/popular-5.svg" alt="Умные часы" width="56" height="98">
+						</div>
+						<p>Умные часы</p>
+					</a>
+				</li>			
+				<li class="product-wrapper">
+					<a href="#">
+						<div class="product-wrapper-item">
+							<img src="img/popular-product/popular-6.svg" alt="Квадрокоптеры" width="132" height="69">
+						</div>
 						<p>Квадрокоптеры</p>
 					</a>
 				</li>
@@ -380,7 +433,7 @@
 				</ul>
 			</div>
 			<p class="footer-copyright">
-				<a class="button" href="https://htmlacademy.ru">
+				<a href="https://htmlacademy.ru">
 					<svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
 						<path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
 					</svg>
