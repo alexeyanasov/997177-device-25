@@ -95,9 +95,7 @@ a{
 .site-navigation-section a{
 	text-transform: none;
 }
-.navigation a{
-	/*text-transform: none;*/
-}
+/*Контакты и О нас*/
 .contacts{
 	padding-bottom: 90px;
 }
@@ -110,6 +108,49 @@ a{
 
 	text-align: left;
 	letter-spacing: 0.5px;
+}
+.about-title{
+	position: relative;
+}
+.about-title::before{
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 8px;
+	background-color: #000;
+	left: 0;
+	top: -40px;
+}
+.contacts-title{
+	position: relative;
+}
+.contacts-title::before{
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 8px;
+	background-color: #000;
+	left: 0;
+	top: -40px;
+}
+
+.partners-list{
+	list-style-type: none;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: normal;
+	margin-bottom: 85px;
+	padding-left: 33px;
+	color: #000;
+}   
+.partners-item{
+	position: relative;
+}
+.partners-item::before{
+	content: "◦";
+	color: rgb(229, 229, 229);
+	position: absolute;
+	left: -33px;
 }
 .button{
 	font-family: Gilroy, Tahoma, Geneva, sans-serif;
@@ -476,6 +517,8 @@ a{
 .manufacturers{
 	display: flex;
 	justify-content: center;
+	margin-top: 90px;
+	margin-bottom: 125px;
 }
 .manufacturers li{
 	list-style: none;
@@ -955,4 +998,156 @@ a{
 	position: absolute;
 	left: 0px;
 	top: -30px;
+}
+
+/*Пагинация*/
+.controls{
+	background-color: rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: space-between;
+	margin-left: 70px;
+	margin-right: 20px;
+	padding: 0;
+	width: 760px;
+}
+.pagination-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+a.pagination-item-current{
+	color: rgba(0, 0, 0, 1);
+}
+.pagination-list a {
+	display: block;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.3);
+	letter-spacing: 3.2px;
+	padding: 20px;
+}
+
+/*Преимущества*/
+.services{
+	position: relative;
+	display: flex;
+	flex-grow: 1;
+	background: linear-gradient(to bottom, #fff, #fff 170px, rgba(229, 229, 229, 1) 170px);
+}
+.tab-controls{
+	list-style: none;
+}
+.services-items{
+	min-width: 100%;
+}
+
+.tab-controls .info-menu-item {
+	width: 160px;
+	text-align: center;
+}
+.tab-wrapper{
+	display: flex;
+}
+.tab-controls{
+	padding-top: 107px;
+	border-right: 6px solid #000;
+	padding-right: 106px;
+}
+.info-menu-item{
+	margin-bottom: 30px;
+}
+.services-items-active{
+	font-family: Gilroy, Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.33;
+	text-align: center;
+	position: relative;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+	color: #f0c52e;
+	z-index: 1;
+}
+.services-items-active::before{
+	width: 100%;
+	transform: scale(3.1, 3.1);
+	background-color: #000;
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+.delivery{
+	position: relative;
+}
+.delivery::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -250px;
+	height: 164px;
+	width: 136px;
+	background-image: url(../img/services/delivery.svg);
+}
+.warranty{
+	position: relative;
+}
+.warranty::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -250px;
+	height: 164px;
+	width: 136px;
+	background-image: url(../img/services/warranty.svg);
+}
+.warranty{
+	position: relative;
+}
+.warranty::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -250px;
+	height: 195px;
+	width: 171px;
+	background-image: url(../img/services/warranty.svg);
+}
+.credit{
+	position: relative;
+}
+.credit::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -250px;
+	height: 188px;
+	width: 156px;
+	background-image: url(../img/services/credit.svg);
+}
+
+.tab {
+	display: none;
+}
+#tab1:checked ~ .wrapper-content #tab-1,
+#tab2:checked ~ .wrapper-content #tab-2,
+#tab3:checked ~ .wrapper-content #tab-3 {
+	display: block;
+}
+
+.svg{
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+.svg:hover,
+.svg:focus{
+	opacity: 0.5;
+}
+.svg:active{
+	opacity: 0.3;
 }
