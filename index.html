@@ -123,15 +123,15 @@
 										<div class="wrapper">
 											<a class="btn" href="#">Подробнее</a>
 										</div>
-										<table class="table-specifications" border="1">
+										<table class="table-specifications">
 											<thead>
 												<tr>
-													<th>48 часов</th>
+													<th class="value">48 часов</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>Без подзарядки</td>
+													<td class="parameter">Без подзарядки</td>
 												</tr>
 											</tbody>
 										</table>
@@ -149,17 +149,17 @@
 										<div class="wrapper">
 											<a class="btn" href="#">Подробнее</a>
 										</div>
-										<table class="table-specifications" border="1">
+										<table class="table-specifications">
 											<thead>
 												<tr>
-													<th>800 м</th>
-													<th>50 м</th>
+													<th class="value">800 м</th>
+													<th class="value">50 м</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>Дальность полета</td>
-													<td>Радиус поражения</td>
+													<td class="parameter">Дальность полета</td>
+													<td class="parameter">Радиус поражения</td>
 												</tr>
 											</tbody>
 										</table>
@@ -446,31 +446,33 @@
 	</footer>
 
 
-	<section class="writeus">
+	<section class="modal modal-writeus">
 		<button class="modal-close" type="button">
 			Закрыть
 		</button>
 		<form class="writeus-wrapper" action="https://echo.htmlacademy.ru" method="post">
-			<p class="writeus-item">
-				<label for="appointment-name">Ваше имя:</label>
-				<input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-			</p>
+			<div class="appointment-item-wrapper">
+				<p class="appointment-item">
+					<label class="appointment" for="appointment-name">Ваше имя:</label>
+					<input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+				</p>
+				<p class="appointment-item">
+					<label class="appointment" for="appointment-email">Ваш e-mail:</label>
+					<input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+				</p>
+			</div>
 			<p class="appointment-item">
-				<label for="appointment-email">Ваш e-mail:</label>
-				<input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-			</p>
-			<p class="appointment-item">
-				<label for="appointment-text">Текст письма:</label>
+				<label class="appointment" for="appointment-text">Текст письма:</label>
 				<textarea name="text" id="appointment-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
 			</p>
 			<button class="button" type="submit">Отправить</button>
 		</form>
 	</section>
-	<section class="popap-map">
+	<section class="modal modal-map">
 		<button class="modal-close" type="button">
 			Закрыть
 		</button>
-		<img src="img/map.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва">
+		<img src="img/map-big.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва">
 	</section>
 </body>
 </html>
