@@ -21,7 +21,7 @@
 			<nav class="main-navigation">
 				<div class="main-navigation-wrapper">
 					<form action="">
-						<input type="search" placeholder="Поиск">
+						<input type="search" placeholder="Поиск по сайту">
 						<input type="submit" value="Найти">
 					</form>
 					<div class="navigation">
@@ -126,7 +126,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="button" type="submit">Показать</button>
+					<button class="filter-button button" type="submit">Показать</button>
 				</form>
 			</section>
 			<div class="catalog-wrapper">
@@ -147,8 +147,8 @@
 					<h2 class="visually-hidden">Моноподы для селфи</h2>
 					<div class="catalog-item">
 						<div class="curtain">
-							<button type="button">В корзину</button>
-							<button type="button">Добавить к сравнению</button>
+							<a class="catalog-button button" href="#">В корзину</a>
+							<a class="catalog-compare-button button" href="#">Добавить к сравнению</a>
 						</div>
 						<div class="img-wrapper">
 							<img src="img/product/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -160,8 +160,8 @@
 					</div>
 					<div class="catalog-item">
 						<div class="curtain">
-							<button type="button">В корзину</button>
-							<button type="button">Добавить к сравнению</button>
+							<a class="catalog-button button" href="#">В корзину</a>
+							<a class="catalog-compare-button button" href="#">Добавить к сравнению</a>
 						</div>
 						<div class="img-wrapper">
 							<img src="img/product/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
@@ -173,8 +173,8 @@
 					</div>				
 					<div class="catalog-item">
 						<div class="curtain">
-							<button type="btn">В корзину</button>
-							<button type="button">Добавить к сравнению</button>
+							<a class="catalog-button button" href="#">В корзину</a>
+							<a class="catalog-compare-button button" href="#">Добавить к сравнению</a>
 						</div>
 						<div class="img-wrapper">
 							<img src="img/product/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
@@ -184,12 +184,12 @@
 							<span class="catalog-item-price">2500 руб.</span>
 						</p>
 					</div>
-					<div class="catalog-item">
+					<div class="catalog-item catalog-item-new">
 						<div class="curtain">
-							<button type="button">В корзину</button>
-							<button type="button">Добавить к сравнению</button>
+							<a class="catalog-button button" href="#">В корзину</a>
+							<a class="catalog-compare-button button" href="#">Добавить к сравнению</a>
 						</div>
-						<div class="img-wrapper img-new">
+						<div class="img-wrapper">
 							<img class="" src="img/product/item-4.jpg" alt="Селфи-палка следуй за мной" width="360" height="380">
 						</div>
 						<p class="catalog-item-price-wrap">
@@ -198,13 +198,12 @@
 						</p>
 					</div>
 				</div>
-				<section class="controls">
+				<section class="pagination">
 					<button class="button-pagination" type="button">Назад</button>
 					<ul class="pagination-list">
-						<li class="pagination-item"><a href="#">1</a></li>
-						<li class="pagination-item pagination-item-current"><a>2</a></li>
+						<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+						<li class="pagination-item"><a>2</a></li>
 						<li class="pagination-item"><a href="#">3</a></li>
-						<li class="pagination-item"><a href="#">4</a></li>
 					</ul>
 					<button class="button-pagination" type="button">Вперед</button>
 				</section>

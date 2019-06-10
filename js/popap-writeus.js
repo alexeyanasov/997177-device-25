@@ -1,6 +1,6 @@
 // Находим кнопку "Напишите нам"
 
-var link = document.querySelector(".writetous"); // кнопка Наипшите нам
+var link = document.querySelector(".contacts-button"); // кнопка Наипшите нам
 var popup = document.querySelector(".modal-writeus"); // Модалка с формой
 var close = popup.querySelector(".modal-close"); // Кнопка закрытия
 var formName = popup.querySelector("[name=name]"); // фокус на поле Имя
