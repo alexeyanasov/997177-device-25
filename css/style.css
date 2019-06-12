@@ -996,11 +996,8 @@ a{
 	width: 12px;
 	height: 12px;
 	margin-right: 8px;
-
 	vertical-align: top;
-
-	background-color: transparent;
-	border: 2px solid #000;
+	background-image: url(../img/slider/slider-button-empty.png);
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -1009,15 +1006,12 @@ a{
 	bottom: 41%;
 	right: 20px;
 	z-index: 20;
-
 	font-size: 0;
 }
 .visually-hidden {
 	position: absolute;
-
 	width: 1px;
 	height: 1px;
-
 	clip: rect(0, 0, 0, 0);
 }
 .slide {
@@ -1033,7 +1027,7 @@ a{
 #product-3:checked ~ .wrapper-content label[for="product-3"] {
 	width: 12px;
 	height: 12px;
-	background-color: #000;
+	background-image: url(../img/slider/slider-button-active.png);
 }
 .table-specifications{
 	margin-top: 70px;
