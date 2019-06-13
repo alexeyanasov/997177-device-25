@@ -994,6 +994,7 @@ a{
 }
 .about-title{
 	position: relative;
+	padding-bottom: 7px;
 }
 .about-title::before{
 	position: absolute;
@@ -1031,12 +1032,16 @@ a{
 .contacts-button{
 	margin-top: 70px;
 }
+.partners-content{
+	padding-top: 15px;
+}
 .partners-list{
 	font-weight: 700;
 	line-height: 40px;
 	/*margin-bottom: 85px;*/
 
-	margin-bottom: 136px;
+	margin-bottom: 64px;
+	padding-top: 50px;
 	padding-left: 33px;
 
 	list-style-type: none;
@@ -1806,14 +1811,14 @@ fieldset.catalog-filter-bluethooth-group{
 .footer-contacts{
 	margin: 0;
 	padding: 0;
-	padding-bottom: 68px;
+	padding-bottom: 49px;
 }
 .footer-contacts:nth-child(1){
 	position: relative;
 }
 .footer-contacts:nth-child(1)::before{
 	position: absolute;
-	bottom: 0;
+	bottom: -35px;
 
 	width: 80px;
 	height: 8px;
@@ -1827,12 +1832,20 @@ fieldset.catalog-filter-bluethooth-group{
 	width: 35px;
 	height: 35px;
 }
-.user-navigation-footer,
+.user-navigation-footer{
+	margin: 0px;
+	padding-left: 190px;
+}
+.user-navigation-link-footer,
 .navigation-link-footer{
-	margin: 0;
+/*	margin: 0;
 	padding: 0;
 	padding-right: 15px;
-	padding-left: 5px;
+	padding-left: 5px;*/
+	margin: -6px;
+    padding: 0;
+    padding-right: 18px;
+    padding-left: 13px;
 }
 .user-navigation-footer:hover,
 .navigation-link-footer:hover,
