@@ -715,7 +715,8 @@ a{
     /*padding-top: 107px;
     padding-right: 106px;*/
     padding-top: 87px;
-    padding-right: 151px;
+    padding-right: 189px;
+    padding-left: 0px;
 
     border-right: 6px solid #000;
 }
@@ -826,7 +827,7 @@ a{
     width: 270px;*/
     left: 0px;
 
-    width: 245px;
+    width: 285px;
     height: 50%;
 
     content: '';
@@ -978,6 +979,7 @@ a{
 	justify-content: space-between;
 }
 .contacts{
+	padding-left: 42px;
 	padding-bottom: 90px;
 }
 .contacts h2,
@@ -1008,6 +1010,7 @@ a{
 }
 .contacts-title{
 	position: relative;
+	padding-bottom: 7px;
 }
 .contacts-title::before{
 	position: absolute;
@@ -1022,8 +1025,11 @@ a{
 
 	background-color: #000;
 }
+.contacts-img-wrapper{
+	padding-top: 23px;
+}
 .contacts-button{
-	margin-top: 100px;
+	margin-top: 70px;
 }
 .partners-list{
 	font-weight: 700;
