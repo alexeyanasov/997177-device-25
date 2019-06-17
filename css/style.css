@@ -1636,6 +1636,9 @@ fieldset.catalog-filter-range{
 .filter-price button:last-of-type{
     left: 110px;
 }
+.filter-button{
+	width: 200px;
+}
 /*Чекбоксы*/
 fieldset.catalog-filter-color{
 	width: 200px;
