@@ -59,10 +59,11 @@ a{
 /*Логотип*/
 .header-logo{
 	display: inline-block;
-	vertical-align: baseline;
 	/*margin-left: 60px;*/
 
 	margin-left: 40px;
+
+	vertical-align: baseline;
 }
 .header-logo img{
 	width: 165px;
@@ -191,6 +192,13 @@ a{
 	background-repeat: no-repeat;
 }
 /*Навигация*/
+.navigation{
+	display: flex;
+
+	min-width: 500px;
+
+	justify-content: space-between;
+}
 .user-navigation,
 .navigation-list,
 .site-navigation-item,
@@ -435,12 +443,14 @@ a{
 }
 .navigation-list li{
 	margin-left: 30px;
+	margin-right: 30px;
 }
 .navigation-list li:first-child{
 	margin-left: 0;
 }
 .navigation-list li:last-child{
 	margin-left: auto;
+	margin-right: 0;
 }
 /*Слайдер*/
 .main-content{
@@ -613,11 +623,13 @@ a{
 	font-weight: 300;
 	line-height: 48px;
 
+	max-width: 150px;
 	margin: 0;
 	padding: 0;
 	padding: 10px;
 
 	letter-spacing: 0.4px;
+	word-wrap: break-word;
 
 	color: #464646;
 }
@@ -995,6 +1007,12 @@ a{
 .contacts{
 	padding-bottom: 90px;
 	padding-left: 42px;
+}
+.about{
+	width: 470px;
+}
+.contacts{
+	width: 560px;
 }
 .contacts h2,
 .about h2{
@@ -1605,7 +1623,7 @@ fieldset.catalog-filter-color{
 .catalog-filter-color{
 	position: relative;
 
-	height: 285px;
+	min-height: 285px;
 	padding: 0;
 }
 .catalog-filter-color legend{
@@ -1647,10 +1665,11 @@ fieldset.catalog-filter-color{
 .check-input{
 	position: absolute;
 
+	clip: rect(0 0 0 0);
+
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	clip: rect(0 0 0 0);
 }
 .check-box{
 	position: absolute;
@@ -1717,10 +1736,11 @@ fieldset.catalog-filter-bluethooth-group{
 .radio-input{
 	position: absolute;
 
+	clip: rect(0 0 0 0);
+
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	clip: rect(0 0 0 0);
 }
 .radio-box{
 	position: absolute;
@@ -1791,10 +1811,10 @@ fieldset.catalog-filter-bluethooth-group{
 	opacity: 0.2;
 }
 .footer-social{
-	margin: 0 auto;
 	display: flex;
 
 	width: 141px;
+	margin: 0 auto;
 	padding: 0;
 
 	list-style: none;
@@ -1819,6 +1839,7 @@ fieldset.catalog-filter-bluethooth-group{
 	margin: 0;
 	padding: 0;
 
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .navigation-list--footer li{
@@ -1844,6 +1865,7 @@ fieldset.catalog-filter-bluethooth-group{
 }
 .footer-contacts a{
 	text-decoration: none;
+
 	color: #fff;
 }
 .footer-contacts a:hover{
