@@ -147,8 +147,6 @@ a{
     right: 0;
     bottom: 0;
 
-    visibility: hidden;
-
     height: 49px;
     padding: 8px 18px;
 
@@ -156,21 +154,22 @@ a{
     letter-spacing: 2px;
     text-transform: none;
 
+    opacity: 0;
     border: 2px solid rgba(0, 0, 0, 1);
     background-color: transparent;
 }
 .search:focus{
+    opacity: 1;
     border-bottom: 2px solid #000;
-    outline: none;
 }
 .search:active{
+    opacity: 1;
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    outline: none;
 }
 .search:focus ~ .search-button,
 .search-button:hover,
 .search-button:focus{
-    visibility: visible;
+    opacity: 1;
 }
 .search-button:hover,
 .search-button:focus{
@@ -269,12 +268,14 @@ a{
 }
 .navigation-link__compare{
     position: relative;
+
+    padding-left: 20px;
 }
 .navigation-link__compare::before{
     position: absolute;
     top: 11px;
     /*left: 8px;*/
-    left: -16px;
+    left: 0;
 
     width: 14px;
     height: 12px;
@@ -289,12 +290,13 @@ a{
     position: relative;
 
     margin-left: 40px;
+    padding-left: 20px;
 }
 .navigation-link__cart::before{
     position: absolute;
     top: 11px;
     /*left: 8px;*/
-    left: -16px;
+    left: 0;
 
     width: 14px;
     height: 12px;
@@ -352,22 +354,20 @@ a{
 }
 .navigation-link{
     /*padding-left: 25px;*/
-    padding-left: 4px;
+    /*padding-left: 4px;*/
 }
 .user-navigation{
+    flex-grow: 1;
+}
+.user-navigation-link{
     position: relative;
 
-    margin-right: auto;
-    /*padding-left: 25px;*/
-    padding-left: 48px;
-
-    flex-grow: 1;
+    padding-left: 20px;
 }
 .user-navigation-link::before{
     position: absolute;
-    top: 8px;
-    /*left: 5px; */
-    left: 21px;
+    top: 5px;
+    left: 0;
 
     width: 14px;
     height: 12px;
@@ -466,7 +466,7 @@ a{
 .slider{
     position: relative;
 
-    min-height: 500px;
+    height: 500px;
 }
 .slider-wrapper{
     position: relative;
@@ -514,7 +514,7 @@ a{
 
     position: absolute;
     z-index: -1;
-    /*	top: 20px;
+    /*  top: 20px;
     right: 0;*/
     top: 7px;
     right: 11px;
@@ -570,7 +570,7 @@ a{
 
     position: absolute;
     z-index: 20;
-    /*	right: 20px;
+    /*  right: 20px;
     bottom: 41%;*/
     right: 63px;
     bottom: 43%;
@@ -623,7 +623,7 @@ a{
     font-weight: 300;
     line-height: 48px;
 
-    max-width: 150px;
+    max-width: 155px;
     margin: 0;
     padding: 0;
     padding: 10px;
@@ -642,7 +642,7 @@ a{
 }
 .slider-img img{
     position: absolute;
-    /*	top: -30px;
+    /*  top: -30px;
     left: 0;*/
     top: -42px;
     left: 90px;
@@ -728,9 +728,9 @@ a{
     display: flex;
 }
 .tab-controls{
-    width: 90px;
+    width: 280px;
     padding-top: 105px;
-    padding-right: 185px;
+    /*padding-right: 185px;*/
     padding-left: 0;
 
     list-style: none;
@@ -747,7 +747,7 @@ a{
 }
 .delivery::after{
     position: absolute;
-    /*	top: 0;
+    /*  top: 0;
     right: -250px;*/
     top: 7px;
     right: -231px;
@@ -841,7 +841,7 @@ a{
     position: absolute;
     z-index: -1;
     top: 25%;
-    /*	left: 0;
+    /*  left: 0;
     width: 270px;*/
     left: 0;
 
@@ -1091,6 +1091,10 @@ a{
 /**************************/
 /*********CATALOG**********/
 /**************************/
+.header-catalog{
+    display: flex;
+    flex-direction: column;
+}
 .page-title{
     min-height: 47px;
     margin: 0;
@@ -1120,8 +1124,8 @@ a{
     margin: 0;
     margin-top: 108px;
     padding: 0;
-    padding-left: 57px;
     padding-bottom: 12px;
+    padding-left: 57px;
 
     color: #000;
 }
@@ -1169,7 +1173,7 @@ a{
     color: #000;
 }
 .sort-list-updown{
-	margin-left: 40px;
+    margin-left: 40px;
     /*margin: auto auto;*/
 }
 .sort-list-up{
@@ -1314,12 +1318,11 @@ a{
 .catalog-filter form{
     width: 268px;
     margin-left: auto;
-    /*padding-right: 68px;*/
 }
 .catalog-sorting{
     display: flex;
 
-    padding: 3px;
+    height: 71px;
 
     background-color: #ebebeb;
 }
@@ -1345,7 +1348,9 @@ a{
 
     width: 268px;
     margin-left: auto;
+    padding-top: 10px;
     padding-right: 68px;
+    padding-bottom: 10px;
 
     letter-spacing: 3.2px;
     text-transform: uppercase;
@@ -1356,8 +1361,8 @@ a{
     justify-content: center;
 }
 .filter-title-wrapper{
-	padding-top: 10px;
-	padding-bottom: 10px;
+    height: 71px;
+
     background-color: #d9d9d9;
 }
 .catalog-item{
@@ -1367,11 +1372,12 @@ a{
     min-height: 470px;
     margin-bottom: 45px;
 }
+
 .catalog-item:nth-last-child(2){
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 .catalog-item:nth-last-child(1){
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 .img-wrapper{
     background-color: #eee;
@@ -1404,6 +1410,13 @@ a{
     left: 50%;
 
     transform: translate(-50%, -50%);
+}
+.catalog-compare-button:hover,
+.catalog-compare-button:focus{
+    opacity: 0.5;
+}
+.catalog-compare-button:active{
+    opacity: 0.2;
 }
 .catalog-button:focus ~ img,
 .catalog-compare-button:focus ~ img{
@@ -1497,9 +1510,9 @@ a{
 
     margin: 0;
     padding: 0;
+    padding-right: 22px;
     /*padding: 30px;*/
     padding-left: 22px;
-    padding-right: 22px;
 
     letter-spacing: 3.2px;
     text-transform: uppercase;
@@ -1521,7 +1534,7 @@ a{
 /*Боковая панель фильтра*/
 /*Ползунок*/
 fieldset.catalog-filter-range{
-	width: 100px;
+    width: 100px;
     margin-top: 70px;
     margin-bottom: 15px;
 
@@ -1637,11 +1650,11 @@ fieldset.catalog-filter-range{
     left: 110px;
 }
 .filter-button{
-	width: 200px;
+    width: 200px;
 }
 /*Чекбоксы*/
 fieldset.catalog-filter-color{
-	width: 200px;
+    width: 200px;
     margin-bottom: 15px;
 
     border: none;
@@ -1730,7 +1743,7 @@ fieldset.catalog-filter-color{
 
 /*Радиокнопки*/
 fieldset.catalog-filter-bluethooth-group{
-	width: 100px;
+    width: 100px;
     margin-bottom: 15px;
 
     border: none;
@@ -1869,16 +1882,7 @@ fieldset.catalog-filter-bluethooth-group{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.footer-social svg{
-    opacity: 0.5;
-}
-.footer-social svg:hover,
-.footer-social svg:focus{
-    opacity: 0.8;
-}
-.footer-social svg:active{
-    opacity: 0.2;
-}
+
 .navigation-list--footer{
     display: flex;
 
@@ -1936,6 +1940,14 @@ fieldset.catalog-filter-bluethooth-group{
 .social-button{
     width: 35px;
     height: 35px;
+    opacity: 0.5;
+}
+.social-button:hover,
+.social-button:focus{
+    opacity: 0.8;
+}
+.social-button:active{
+    opacity: 0.2;
 }
 .user-navigation-footer{
     margin: 0;
@@ -1943,18 +1955,12 @@ fieldset.catalog-filter-bluethooth-group{
 }
 .user-navigation-link-footer,
 .navigation-link-footer{
-    /*	margin: 0;
-	padding: 0;
-	padding-right: 15px;
-	padding-left: 5px;*/
     margin: 0;
     padding: 0;
     padding-right: 18px;
     padding-left: 13px;
 }
-.user-navigation-footer:hover,
 .navigation-link-footer:hover,
-.user-navigation-footer:focus,
 .navigation-link-footer:focus{
     opacity: 0.5;
 }
@@ -2176,11 +2182,11 @@ fieldset.catalog-filter-bluethooth-group{
 .button::before{
     position: absolute;
     z-index: -1;
-    top: 25%;
+    top: 33%;
     left: 0;
 
     width: 100%;
-    height: 50%;
+    height: 30%;
 
     content: '';
     transition: inherit;
