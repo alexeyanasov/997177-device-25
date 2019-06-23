@@ -1281,7 +1281,7 @@ a{
     font-weight: 800;
     line-height: 24px;
 
-    width: 235px;
+    width: 256px;
 
     letter-spacing: 0.18px;
     text-transform: none;
@@ -1330,6 +1330,11 @@ a{
 }
 .product-wrapper-img img{
     margin: auto auto;
+}
+.product-wrapper-img .img-product-2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
 }
 .product-wrapper p{
     width: 160px;
