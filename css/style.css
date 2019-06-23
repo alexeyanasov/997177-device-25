@@ -1304,6 +1304,7 @@ a{
     line-height: 24px;
 
     display: inline-block;
+    vertical-align: baseline;
 
     text-transform: none;
 
